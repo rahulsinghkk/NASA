@@ -1,13 +1,13 @@
 name: NASA Project CI
 on:
   push:
-    braches: [master]
+    branches: [master]
   pull_request:
     branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - uses: actions/checkout@v2
       - name: Use Node.js version 16
         uses: actions/setup-node@v2
